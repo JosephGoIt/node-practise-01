@@ -1,5 +1,5 @@
-const fs = require("fs/promises");
-const path = require("path");
+import fs from "fs/promises";
+import path from "path";
 
 const contactsPath = path.join("db", "contacts.json");
 
@@ -53,6 +53,14 @@ async function addContact(name, email, phone) {
 }
 
 module.exports = {
+  listContacts,
+  getContactById,
+  removeContact,
+  addContact,
+};
+
+// Export the functions for use in other modules
+export {
   listContacts,
   getContactById,
   removeContact,

@@ -110,14 +110,21 @@
 
 // game();
 
-const { Command } = require("commander");
-const program = new Command();
-const {
+// const { Command } = require("commander");
+// const {
+//   listContacts,
+//   getContactById,
+//   removeContact,
+//   addContact,
+// } = require("./contacts.js");
+import { Command } from "commander";
+import {
   listContacts,
   getContactById,
   removeContact,
   addContact,
-} = require("./contacts.js");
+} from "./contacts.js";
+const program = new Command();
 
 program
   .option("-a, --action <type>", "choose action")

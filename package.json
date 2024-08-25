@@ -2,6 +2,7 @@
   "name": "practise-01",
   "version": "1.0.0",
   "description": "practising node based on Module 1 lessons",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
